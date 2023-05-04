@@ -1,0 +1,41 @@
+ant:
+<ant>
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_redistribution" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:ExtractFeaturesFunction,Class1,0.0,private' -T link:lib -d 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing' -v 'class{Class1:D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunc.m}' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ColorFunction.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\rgbhist.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ShapeFunction.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\statmoments.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\statxture.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\TextureFunction.m' 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs
+Excluded\Extract Features WORK" to Compiler path instance.] 
+Parsing file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunc.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 18 temporary MEX authorization files.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc28732_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc24321_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc30435_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc23770_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc21388_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc8544_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc24341_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc14742_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc5030_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc7016_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc2624_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc5011_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc32121_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc22489_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc17261_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc1990_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc32751_4796.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_012bc30854_4796.auth'.
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\Class1Native.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\Class1.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunction.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunction.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunction.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\Class1.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunctionNative.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunction.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\ExtractFeaturesFunctionNative.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_testing\Class1Native.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\Extract Features WORK\ExtractFeaturesFunction\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 48 seconds.

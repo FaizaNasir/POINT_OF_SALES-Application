@@ -1,0 +1,47 @@
+ant:
+<ant>
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_redistribution" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:LATEST_TestWithPath_LATEST,MyClasss,0.0,private' -T link:lib -d 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing' -v 'class{MyClasss:D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\test.m}' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\camerashot.wav' -a C:\MATLAB\SupportPackages\R2015a\osgenericvideointerface -a C:\MATLAB\SupportPackages\R2015a\dcamhardware 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test
+Function LATEST" to Compiler path instance.] 
+Parsing file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\test.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 24 temporary MEX authorization files.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_00884989_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088418430_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088415883_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088414280_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008843415_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_00884259_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088421219_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088430921_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008843569_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088428061_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008845660_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008845961_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088428729_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088410932_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088423377_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088422912_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088424147_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_00884871_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088424197_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008849328_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088420403_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008849536_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088422342_2180.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0088416158_2180.auth'.
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\MyClasssNative.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\MyClasss.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATEST.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATEST.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATEST.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\MyClasss.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATESTNative.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATEST.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\LATEST_TestWithPath_LATESTNative.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_testing\MyClasssNative.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\LATEST_TestWithPath_LATEST\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 2 minutes and 33 seconds.

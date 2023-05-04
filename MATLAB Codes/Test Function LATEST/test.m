@@ -1,0 +1,30 @@
+function OUTPUT = test(path)
+close all;clc;
+camcode();                    %call to camcode
+image = imread('image.jpg');  %reading image captured via webcam
+%imshow(image);                %to show image
+FV_COLOR = color(image);      %extracting color features 
+FV_SHAPE = shape(image);      %extracting shape features
+FV_TEXTURE = texture(image);  %extracting texture features
+
+all_features = [FV_COLOR FV_SHAPE FV_TEXTURE]; %All features in a single vector  
+%load (strcat(path,'\','INPUT_FEATURES_norm.mat'))
+load(strcat(path,'\','maxVec.mat'));           %importing max of INPUTs
+load(strcat(path,'\','minVec.mat'));           %importing min of INPUTs
+load(strcat(path,'\','weight1.mat'));          %importing w1 (HIDDEN LAYER weights) extracted while training
+load(strcat(path,'\','weight2.mat'));          %importing w2 (OUPUT LAYER weights) extracted while training
+load(strcat(path,'\','Biased1.mat'));          %importing b1 (HIDDEN LAYER biased values) extracted while training
+load(strcat(path,'\','Biased2.mat'));          %importing b2 (OUTPUT LAYER biased values) extracted while training
+
+
+all_features = ((all_features-minVec)./(maxVec-minVec) - 0.5 ) *2;  %NORMALIZING features between -1 to 1
+                                                                     %for
+                                                                     %LOGSigmoid
+                                                                    
+        n1 = w1 * all_features' + b1;              %Hidden layer neuron values
+        a1 = logsig( n1 );                         %hidden ayer activation
+        n2 = w2 * a1 + b2;                         %Output layer Neuron values
+        a2 = purelin( n2 );                        %activation of output layer
+        OUTPUT = round(a2);                        %Round off the pridicted OUPUT value
+
+end

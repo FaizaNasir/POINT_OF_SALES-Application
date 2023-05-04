@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8FBEBC22-FE38-4703-B97A-F96C939CFF11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>POINT_OF_SALES_Application</RootNamespace>
+    <AssemblyName>POINT_OF_SALES Application</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DLL">
+      <HintPath>..\DLL\for_redistribution_files_only\DLL.dll</HintPath>
+    </Reference>
+    <Reference Include="FeatureEXTRACT">
+      <HintPath>..\FeatureEXTRACT\for_redistribution_files_only\FeatureEXTRACT.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="LATEST_TestWithPath_LATEST">
+      <HintPath>..\LATEST_TestWithPath_LATEST\for_redistribution_files_only\LATEST_TestWithPath_LATEST.dll</HintPath>
+    </Reference>
+    <Reference Include="MathWorks.MATLAB.ProductionServer.Client">
+      <HintPath>C:\Program Files\MATLAB\MATLAB Production Server\R2015a\client\dotnet\MathWorks.MATLAB.ProductionServer.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="MWArray, Version=2.9.1.0, Culture=neutral, PublicKeyToken=e1d84a0da19db86f, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\MATLAB\MATLAB Runtime\v85\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TEST">
+      <HintPath>..\..\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\TEST\for_redistribution_files_only\TEST.dll</HintPath>
+    </Reference>
+    <Reference Include="testWithPath, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\testWithPath\for_redistribution_files_only\testWithPath.dll</HintPath>
+    </Reference>
+    <Reference Include="test_FINAL_FINAL">
+      <HintPath>..\TEST DLL FINAL(8-may-16)\test_FINAL_FINAL\for_redistribution_files_only\test_FINAL_FINAL.dll</HintPath>
+    </Reference>
+    <Reference Include="TrainingFuncNEW">
+      <HintPath>..\TrainingFuncNEW\for_redistribution_files_only\TrainingFuncNEW.dll</HintPath>
+    </Reference>
+    <Reference Include="TrainNew">
+      <HintPath>..\..\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TrainFunction\TrainNew\for_redistribution_files_only\TrainNew.dll</HintPath>
+    </Reference>
+    <Reference Include="webcam_app, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\webcam_appDLL\for_redistribution_files_only\webcam_app.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllSALES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllSALES.Designer.cs">
+      <DependentUpon>AllSALES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALL_PRODUCTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ALL_PRODUCTS.Designer.cs">
+      <DependentUpon>ALL_PRODUCTS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaptureImagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureImagesForm.Designer.cs">
+      <DependentUpon>CaptureImagesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clsPrint.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="Delivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delivery.Designer.cs">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeliveryReport.Designer.cs">
+      <DependentUpon>DeliveryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtFeatureAndTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtFeatureAndTrain.Designer.cs">
+      <DependentUpon>ExtFeatureAndTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashingPassword.cs" />
+    <Compile Include="ItemsWastageManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemsWastageManagement.Designer.cs">
+      <DependentUpon>ItemsWastageManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProfitLoss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfitLoss.Designer.cs">
+      <DependentUpon>ProfitLoss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase Order.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Purchase Order.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseOrder.Designer.cs">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepInventory.Designer.cs">
+      <DependentUpon>RepInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportInvent-ProfitLoss.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportInvent-ProfitLoss.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportProduct.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportProduct.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportWasted.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportWasted.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepProduct.Designer.cs">
+      <DependentUpon>RepProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepPurchase.Designer.cs">
+      <DependentUpon>RepPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepWasted.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepWasted.Designer.cs">
+      <DependentUpon>RepWasted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rptDelivery.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDelivery.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventory.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales.cs" />
+    <Compile Include="SalesRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesRep.Designer.cs">
+      <DependentUpon>SalesRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SalesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SignupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignupForm.Designer.cs">
+      <DependentUpon>SignupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TainingPlotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TainingPlotForm.Designer.cs">
+      <DependentUpon>TainingPlotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingVariablesPath.cs" />
+    <Compile Include="ws.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ws.Designer.cs">
+      <DependentUpon>ws.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllSALES.resx">
+      <DependentUpon>AllSALES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ALL_PRODUCTS.resx">
+      <DependentUpon>ALL_PRODUCTS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptureImagesForm.resx">
+      <DependentUpon>CaptureImagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delivery.resx">
+      <DependentUpon>Delivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeliveryReport.resx">
+      <DependentUpon>DeliveryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtFeatureAndTrain.resx">
+      <DependentUpon>ExtFeatureAndTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemsWastageManagement.resx">
+      <DependentUpon>ItemsWastageManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitLoss.resx">
+      <DependentUpon>ProfitLoss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Purchase Order.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Purchase Order.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseOrder.resx">
+      <DependentUpon>PurchaseOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepInventory.resx">
+      <DependentUpon>RepInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportInvent-ProfitLoss.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportInvent-ProfitLoss.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportProduct.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportProduct.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportWasted.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportWasted.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepProduct.resx">
+      <DependentUpon>RepProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepPurchase.resx">
+      <DependentUpon>RepPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepWasted.resx">
+      <DependentUpon>RepWasted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptDelivery.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDelivery.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventory.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesRep.resx">
+      <DependentUpon>SalesRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SalesReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignupForm.resx">
+      <DependentUpon>SignupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TainingPlotForm.resx">
+      <DependentUpon>TainingPlotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ws.resx">
+      <DependentUpon>ws.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Biased1.mat" />
+    <None Include="Resources\Biased2.mat" />
+    <None Include="Resources\INPUT_FEATURES.mat" />
+    <None Include="Resources\maxVec.mat" />
+    <None Include="Resources\minVec.mat" />
+    <None Include="Resources\NN.prj" />
+    <None Include="Resources\OUTPUTS.mat" />
+    <None Include="Resources\TRAINING_CODE.asv" />
+    <None Include="Resources\weight1.mat" />
+    <None Include="Resources\weight2.mat" />
+    <None Include="Resources\XX.prj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\1.JPG" />
+    <Content Include="Resources\camcode.m" />
+    <Content Include="Resources\camerashot.wav" />
+    <Content Include="Resources\color.m" />
+    <Content Include="Resources\image.jpg" />
+    <Content Include="Resources\images.jpg" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\live_timing_please_wait.jpg" />
+    <None Include="Resources\logo2.png" />
+    <Content Include="Resources\Opponent.m" />
+    <Content Include="Resources\rgbhist.m" />
+    <Content Include="Resources\shape.m" />
+    <Content Include="Resources\statmoments.m" />
+    <Content Include="Resources\statxture.m" />
+    <Content Include="Resources\test.m" />
+    <Content Include="Resources\texture.m" />
+    <Content Include="Resources\TRAINING_CODE.m" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,47 @@
+ant:
+<ant>
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_redistribution" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:testWithPath,Class1,0.0,private' -T link:lib -d 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing' -v 'class{Class1:D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\test.m}' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\camcode.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\camerashot.wav' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\color.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\Opponent.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\rgbhist.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\shape.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\statmoments.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\statxture.m' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\texture.m' -a C:\MATLAB\SupportPackages\R2015a\osgenericvideointerface -a C:\MATLAB\SupportPackages\R2015a\dcamhardware 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test
+Function LATEST" to Compiler path instance.] 
+Parsing file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\test.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 24 temporary MEX authorization files.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c24381_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c2808_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c17971_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c15086_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c1134_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c8199_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c22366_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c31652_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c13799_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c16397_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c11327_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c26477_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c6024_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c32630_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c18269_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c30532_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c31919_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c26938_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c10790_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c14502_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c10479_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c9052_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c23913_5148.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0141c20915_5148.auth'.
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\Class1Native.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\Class1.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPath.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPath.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPath.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\Class1.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPathNative.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPath.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\testWithPathNative.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_testing\Class1Native.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Test Function LATEST\testWithPath\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 1 minutes and 10 seconds.

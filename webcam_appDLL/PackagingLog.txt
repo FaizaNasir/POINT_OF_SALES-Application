@@ -1,0 +1,25 @@
+ant:
+<ant>
+  <mkdir dir="D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_redistribution" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:webcam_app,Class1,0.0,private' -T link:lib -d 'D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing' -v 'class{Class1:D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app.m}' -a 'D:\FYP Work\NEW WORK\Creating WebCamApp\camerashot.wav' -a C:\MATLAB\SupportPackages\R2015a\osgenericvideointerface -a C:\MATLAB\SupportPackages\R2015a\dcamhardware 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\FYP Work\NEW WORK\Creating WebCamApp" to Compiler path
+instance.] 
+Parsing file "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 2 temporary MEX authorization files.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008b012456_2224.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_008b019694_2224.auth'.
+Generating file "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\Class1Native.cs".
+Generating file "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\Class1.cs".
+Generating file "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_app.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_app.ctf" /out:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_app.dll" "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\Class1.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_appNative.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_app.ctf" /out:"D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\webcam_appNative.dll" "D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_testing\Class1Native.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at D:\FYP Work\NEW WORK\Creating WebCamApp\webcam_app\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 1 minutes and 4 seconds.

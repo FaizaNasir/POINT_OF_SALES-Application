@@ -1,0 +1,47 @@
+ant:
+<ant>
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_redistribution" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing" />
+  <mkdir dir="D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_redistribution_files_only" />
+</ant>
+mcc -W 'dotnet:DLL,Class1,0.0,private' -T link:lib -d 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing' -v 'class{Class1:D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\test.m}' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\Biased1.mat' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\Biased2.mat' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\camerashot.wav' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\maxVec.mat' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\minVec.mat' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\weight1.mat' -a 'D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\weight2.mat' -a C:\MATLAB\SupportPackages\R2015a\osgenericvideointerface -a C:\MATLAB\SupportPackages\R2015a\dcamhardware 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs
+Excluded\TEST 20000epox" to Compiler path instance.] 
+Parsing file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\test.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 24 temporary MEX authorization files.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c29416_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c23434_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c23159_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c12837_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c28902_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c22962_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c3281_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c21727_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c6820_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c26870_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c29390_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c15312_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c7770_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c10875_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c25997_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c26093_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c8249_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c3710_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c17499_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c15845_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c3068_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c27646_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c3991_812.auth'.
+Removing: 'C:\Users\SHCOMP~1\AppData\Local\Temp\mathworks_tmp_0032c12959_812.auth'.
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\Class1Native.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\Class1.cs".
+Generating file "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\readme.txt".
+Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLL.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLL.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLL.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\Class1.cs"Executing command: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /optimize /doc:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLLNative.xml" /t:library /r:"C:\Program Files\MATLAB\MATLAB Production Server\R2015a\toolbox\dotnetbuilder\bin\win64\v2.0\MWArray.dll" /resource:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLL.ctf" /out:"D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\DLLNative.dll" "D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_testing\Class1Native.cs"
+Packaging...
+Creating the bundle...
+Web based installer created at D:\FYP Work\NEW WORK\Ver 1.0-----10 Products\Pouchs Excluded\TEST 20000epox\DLL\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 2 minutes and 10 seconds.
